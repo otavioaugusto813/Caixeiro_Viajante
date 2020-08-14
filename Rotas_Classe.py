@@ -7,7 +7,8 @@ gmaps = googlemaps.Client(key = 'your-key')
 
 class Rotas:
 
-    def __init__(self, origem:str, lista_cidades:list):
+    def __init__(self, origem:str, lista_cidades:list): #ainda é necessário implementar a verificação sobre a existência da cidade de destino e de origem. 
+        #Assegure-se de escrevê-las corretamente.
         self.origem = origem
         self.lista_cidades = lista_cidades
 
