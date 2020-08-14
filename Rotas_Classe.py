@@ -3,7 +3,7 @@ from Embaralhar import embaralhar_lista
 from itertools import permutations
 import datetime
 
-gmaps = googlemaps.Client(key = 'AIzaSyD7leRvo_KmisjSAJWRRyrG9XW1NE-zMnI')
+gmaps = googlemaps.Client(key = 'your-key')
 
 class Rotas:
 
@@ -44,7 +44,6 @@ class Rotas:
                         tempo.append (tempo_volta)  # adicionando o tempo da volta
 
 
-                        # viagem_final[i] = sum(tempo[:])
                         x = f"{origem1} > " + ' > '.join (trajetos[i]) + f" > {origem1}"
                         viagem_final[f'{x}'] = sum (tempo[:])
 
